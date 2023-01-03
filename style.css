@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+form {
+    display: grid;
+    padding:10px 0;
+}
+form > label {
+   color:blue;
+}
+form > button {
+    margin-top:10px;
+    padding:8px 0;
+    background-color:#457b9d;
+    color:white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius:5px;
+    border:none;
+}
+form > textarea {
+padding:15px 0;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    color:#457b9d
+}
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#search {
+padding:5px;
+border-radius: 20px;
+padding-left:5px ;
+}
+.red {
+color: red;
+}
+.dark {
+    background-color: #15202B;
+    color: white;
+}
+/* toggle button */
+.changeMode > input[type=checkbox]{
+    height: 18.72px;
+    width: 0;
+    visibility: hidden;
+ 
+  }
+  
+  .changeMode > label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 80px;
+    height: 31px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-top: 8px;
+    padding-bottom: 3px;
+  }
+  .changeMode {
+    display:flex;
+    flex-direction: row;
+  }
+  .changeMode > label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .changeMode > input:checked + label {
+    /* background: #bada55; */
+    background: #15202B;
+  border:1px solid white;
+  }
+  
+  .changeMode > input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  .changeMode > label:active:after {
+    width: 130px;
+  }
+
+  

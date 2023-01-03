@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blogs</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- font Awesome -->
+</head>
+<body>
+    <div id="header" class="header">
+    
+    <div class="changeMode">
+        <h1 > My Blogs </h1>
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        </div> 
+        <div>
+    <input type="search" id="search" placeholder="search blogs">
+</div>
+    </div>
+    <form id='myForm' >
+        <label for="title">Title :</label>
+        <input type="text" id='title'></input>
+        <label for="textBody">Content :</label>
+        <textarea id='textBody'></textarea>
+        <button type="submit">Post</button>
+     </form>
+    <div class="blogList" id="blogList">
+        </div>
+      
+  
+    <script src="script.js"></script>
+
+</body>
+</html>
