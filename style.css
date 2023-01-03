@@ -5,6 +5,9 @@ form {
     display: grid;
     padding:10px 0;
 }
+form > input {
+    padding:3px;
+}
 form > label {
    color:blue;
 }
