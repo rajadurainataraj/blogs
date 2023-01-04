@@ -7,6 +7,7 @@ form {
 }
 form > input {
     padding:3px;
+    width:25%;
 }
 form > label {
    color:blue;
